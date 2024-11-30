@@ -157,6 +157,7 @@ const signupUser = async (req, res) => {
       res.status(500).json({
         status: false,
         message: "Error creating user",
+        message: err.message,
         error: err,
       });
     });

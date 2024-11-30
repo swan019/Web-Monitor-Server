@@ -12,7 +12,10 @@ const webRoutes = require("./app/Website/WebsiteRoutes");
 const WebsiteSchema = require("./app/Website/WebsiteSchema");
 
 const app = express();
+
+const cookieParser = require('cookie-parser');
 app.use(cookieParser());
+
 
 app.use(cors());
 app.use(express.json());
